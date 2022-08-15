@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Deploy to EdgeServer
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Edgeserver Upload
+        uses: lvkdotsh/edgeserver-upload@master
+        with:
+          app_id: "82202256765620224"
+          server: https://api.edgeserver.io
+          token: ${{ secrets.EDGESERVER_TOKEN }}
+          directory: src
