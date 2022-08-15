@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Overpass Mono", monospace;
+
+    background: radial-gradient(
+        50% 158.02% at 50% 50%,
+        #ecf4ff 0%,
+        #f7f7ff 50.01%,
+        #f7f7f7 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    height: 100vh;
+    width: calc(100% - 6rem);
+    max-width: 800px;
+
+    margin-inline: auto;
+}
+
+a {
+    color: #44bcf0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 9rem;
+    line-height: 100%;
+    font-weight: 500;
+
+    background: linear-gradient(
+        95.16deg,
+        #a099ff -14.15%,
+        #7298f8 47.51%,
+        #44bcf0 96.94%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 5rem;
+    line-height: 100%;
+    font-weight: 400;
+
+    background: linear-gradient(
+        95.16deg,
+        #a099ff -14.15%,
+        #7298f8 47.51%,
+        #44bcf0 96.94%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 100%;
+    font-weight: 300;
+
+    margin-top: 1rem;
+}
+
+@media (max-width: 570px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
